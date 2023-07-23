@@ -2,6 +2,7 @@ function callNavMenu() {
     const menu = document.body.querySelectorAll(".menu__link");
     for (let i = 0; i < menu.length; i++) {
         menu[i].addEventListener("click", myFunction);
+        return false;
     }
     function myFunction() {
         this.nextElementSibling.onclick = function() {
